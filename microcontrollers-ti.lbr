@@ -143,7 +143,7 @@
 <symbol name="TM4C123BE6PM">
 </symbol>
 <symbol name="TM4C123BE6PM_POWER">
-<description>Power portion of TM4C123BE6PM</description>
+<description>Power and system function portion of TM4C123BE6PM</description>
 <wire x1="-12.7" y1="22.86" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-25.4" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-25.4" x2="12.7" y2="22.86" width="0.254" layer="94"/>
@@ -162,6 +162,15 @@
 <pin name="GND@55" x="-15.24" y="-20.32" visible="pin" length="short" direction="pwr"/>
 <text x="-12.7" y="23.876" size="1.778" layer="94">&gt;Name</text>
 <text x="-12.7" y="-27.94" size="1.778" layer="94">&gt;Value</text>
+<pin name="!RST" x="15.24" y="17.78" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="OSC0" x="15.24" y="7.62" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="OSC1" x="15.24" y="5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="XOSC0" x="15.24" y="0" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="XOSC1" x="15.24" y="-2.54" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="!HIB" x="15.24" y="15.24" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="!WAKE" x="15.24" y="12.7" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="VBAT" x="15.24" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GNDX" x="15.24" y="-15.24" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
 <symbol name="TM4C123BE6PM_SYS">
 <description>Clock and system function portion of TM4C123BE6PM</description>
@@ -182,21 +191,29 @@
 <text x="-12.7" y="-25.4" size="1.778" layer="94">&gt;Value</text>
 </symbol>
 <symbol name="TM4C123BE6PM_PORTA">
-<description>Port A of TM4C123BE6PM</description>
-<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="10.16" y2="15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<pin name="PA0/U0RX" x="-15.24" y="10.16" visible="pin" length="short"/>
-<pin name="PA1/U0TX" x="-15.24" y="7.62" visible="pin" length="short"/>
-<pin name="PA2/SSI0CLK" x="-15.24" y="5.08" visible="pin" length="short"/>
-<pin name="PA3/SSI0FSS" x="-15.24" y="2.54" visible="pin" length="short"/>
-<pin name="PA4/SSI0RX" x="-15.24" y="0" visible="pin" length="short"/>
-<pin name="PA5/SSI0TX" x="-15.24" y="-2.54" visible="pin" length="short"/>
-<pin name="PA6" x="-15.24" y="-5.08" visible="pin" length="short"/>
-<pin name="PA7" x="-15.24" y="-7.62" visible="pin" length="short"/>
-<text x="-12.7" y="16.51" size="1.778" layer="94">&gt;Name</text>
-<text x="-12.7" y="-15.24" size="1.778" layer="94">&gt;Value</text>
+<description>Port A and B of TM4C123BE6PM</description>
+<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<pin name="PA0/U0RX" x="-15.24" y="20.32" visible="pin" length="short"/>
+<pin name="PA1/U0TX" x="-15.24" y="17.78" visible="pin" length="short"/>
+<pin name="PA2/SSI0CLK" x="-15.24" y="15.24" visible="pin" length="short"/>
+<pin name="PA3/SSI0FSS" x="-15.24" y="12.7" visible="pin" length="short"/>
+<pin name="PA4/SSI0RX" x="-15.24" y="10.16" visible="pin" length="short"/>
+<pin name="PA5/SSI0TX" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="PA6" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="PA7" x="-15.24" y="2.54" visible="pin" length="short"/>
+<text x="-12.7" y="24.13" size="1.778" layer="94">&gt;Name</text>
+<text x="-12.7" y="-25.4" size="1.778" layer="94">&gt;Value</text>
+<pin name="PB0" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="PB1" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="PB2/I2C0SCL" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="PB3/I2C0SDA" x="-15.24" y="-10.16" visible="pin" length="short"/>
+<pin name="PB4" x="-15.24" y="-12.7" visible="pin" length="short"/>
+<pin name="PB5" x="-15.24" y="-15.24" visible="pin" length="short"/>
+<pin name="PB6" x="-15.24" y="-17.78" visible="pin" length="short"/>
+<pin name="PB7" x="-15.24" y="-20.32" visible="pin" length="short"/>
 </symbol>
 <symbol name="TM4C123BE6PM_PORTB">
 <description>Port B of TM4C123BE6PM</description>
@@ -216,21 +233,29 @@
 <text x="-12.7" y="-15.24" size="1.778" layer="94">&gt;Value</text>
 </symbol>
 <symbol name="TM4C123BE6PM_PORTC">
-<description>Port C of TM4C123BE6PM</description>
-<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="10.16" y2="15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<pin name="PC0/TCK/SWCLK" x="-15.24" y="10.16" visible="pin" length="short"/>
-<pin name="PC1/TMS/SWDIO" x="-15.24" y="7.62" visible="pin" length="short"/>
-<pin name="PC2/TDI" x="-15.24" y="5.08" visible="pin" length="short"/>
-<pin name="PC3/TDO/SWO" x="-15.24" y="2.54" visible="pin" length="short"/>
-<pin name="PC4" x="-15.24" y="0" visible="pin" length="short"/>
-<pin name="PC5" x="-15.24" y="-2.54" visible="pin" length="short"/>
-<pin name="PC6" x="-15.24" y="-5.08" visible="pin" length="short"/>
-<pin name="PC7" x="-15.24" y="-7.62" visible="pin" length="short"/>
-<text x="-12.7" y="16.51" size="1.778" layer="94">&gt;Name</text>
-<text x="-12.7" y="-15.24" size="1.778" layer="94">&gt;Value</text>
+<description>Port C and D of TM4C123BE6PM</description>
+<wire x1="-12.7" y1="25.4" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="12.7" y2="25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="25.4" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
+<pin name="PC0/TCK/SWCLK" x="-15.24" y="22.86" visible="pin" length="short"/>
+<pin name="PC1/TMS/SWDIO" x="-15.24" y="20.32" visible="pin" length="short"/>
+<pin name="PC2/TDI" x="-15.24" y="17.78" visible="pin" length="short"/>
+<pin name="PC3/TDO/SWO" x="-15.24" y="15.24" visible="pin" length="short"/>
+<pin name="PC4" x="-15.24" y="12.7" visible="pin" length="short"/>
+<pin name="PC5" x="-15.24" y="10.16" visible="pin" length="short"/>
+<pin name="PC6" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="PC7" x="-15.24" y="5.08" visible="pin" length="short"/>
+<text x="-12.7" y="26.67" size="1.778" layer="94">&gt;Name</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="94">&gt;Value</text>
+<pin name="PD0" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="PD1" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="PD2" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="PD3" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="PD4" x="-15.24" y="-10.16" visible="pin" length="short"/>
+<pin name="PD5" x="-15.24" y="-12.7" visible="pin" length="short"/>
+<pin name="PD6" x="-15.24" y="-15.24" visible="pin" length="short"/>
+<pin name="PD7" x="-15.24" y="-17.78" visible="pin" length="short"/>
 </symbol>
 <symbol name="TM4C123BE6PM_PORTD">
 <description>Port D of TM4C123BE6PM</description>
@@ -250,19 +275,24 @@
 <text x="-10.16" y="-15.24" size="1.778" layer="94">&gt;Value</text>
 </symbol>
 <symbol name="TM4C123BE6PM_PORTE">
-<description>Port E of TM4C123BE6PM</description>
-<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<pin name="PE0" x="-15.24" y="5.08" visible="pin" length="short"/>
-<pin name="PE1" x="-15.24" y="2.54" visible="pin" length="short"/>
-<pin name="PE2" x="-15.24" y="0" visible="pin" length="short"/>
-<pin name="PE3" x="-15.24" y="-2.54" visible="pin" length="short"/>
-<pin name="PE4" x="-15.24" y="-5.08" visible="pin" length="short"/>
-<pin name="PE5" x="-15.24" y="-7.62" visible="pin" length="short"/>
-<text x="-12.7" y="11.43" size="1.778" layer="94">&gt;Name</text>
-<text x="-12.7" y="-15.24" size="1.778" layer="94">&gt;Value</text>
+<description>Port E and F of TM4C123BE6PM</description>
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<pin name="PE0" x="-15.24" y="15.24" visible="pin" length="short"/>
+<pin name="PE1" x="-15.24" y="12.7" visible="pin" length="short"/>
+<pin name="PE2" x="-15.24" y="10.16" visible="pin" length="short"/>
+<pin name="PE3" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="PE4" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="PE5" x="-15.24" y="2.54" visible="pin" length="short"/>
+<text x="-12.7" y="19.05" size="1.778" layer="94">&gt;Name</text>
+<text x="-12.7" y="-17.78" size="1.778" layer="94">&gt;Value</text>
+<pin name="PF0" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="PF1" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="PF2" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="PF3" x="-15.24" y="-10.16" visible="pin" length="short"/>
+<pin name="PF4" x="-15.24" y="-12.7" visible="pin" length="short"/>
 </symbol>
 <symbol name="TM4C123BE6PM_PORTF">
 <description>Port F of TM4C123BE6PM</description>
@@ -284,22 +314,25 @@
 <description>TM4C123BE6PM is a cortex-M microcontroller made by Texas Instruments</description>
 <gates>
 <gate name="A" symbol="TM4C123BE6PM_POWER" x="-60.96" y="15.24"/>
-<gate name="B" symbol="TM4C123BE6PM_SYS" x="-17.78" y="15.24"/>
-<gate name="C" symbol="TM4C123BE6PM_PORTA" x="30.48" y="22.86"/>
-<gate name="D" symbol="TM4C123BE6PM_PORTB" x="30.48" y="-15.24"/>
-<gate name="E" symbol="TM4C123BE6PM_PORTC" x="76.2" y="22.86"/>
-<gate name="F" symbol="TM4C123BE6PM_PORTD" x="73.66" y="-15.24"/>
-<gate name="H" symbol="TM4C123BE6PM_PORTF" x="73.66" y="68.58"/>
-<gate name="G" symbol="TM4C123BE6PM_PORTE" x="30.48" y="68.58"/>
+<gate name="B" symbol="TM4C123BE6PM_PORTA" x="-7.62" y="12.7"/>
+<gate name="C" symbol="TM4C123BE6PM_PORTC" x="43.18" y="10.16"/>
+<gate name="D" symbol="TM4C123BE6PM_PORTE" x="86.36" y="17.78"/>
 </gates>
 <devices>
 <device name="SMD" package="64LQFP">
 <connects>
+<connect gate="A" pin="!HIB" pad="33"/>
+<connect gate="A" pin="!RST" pad="38"/>
+<connect gate="A" pin="!WAKE" pad="32"/>
 <connect gate="A" pin="GND@12" pad="12"/>
 <connect gate="A" pin="GND@27" pad="27"/>
 <connect gate="A" pin="GND@39" pad="39"/>
 <connect gate="A" pin="GND@55" pad="55"/>
 <connect gate="A" pin="GNDA" pad="3"/>
+<connect gate="A" pin="GNDX" pad="35"/>
+<connect gate="A" pin="OSC0" pad="40"/>
+<connect gate="A" pin="OSC1" pad="41"/>
+<connect gate="A" pin="VBAT" pad="37"/>
 <connect gate="A" pin="VDD@11" pad="11"/>
 <connect gate="A" pin="VDD@26" pad="26"/>
 <connect gate="A" pin="VDD@42" pad="42"/>
@@ -307,58 +340,51 @@
 <connect gate="A" pin="VDDA" pad="2"/>
 <connect gate="A" pin="VDDC@25" pad="25"/>
 <connect gate="A" pin="VDDC@56" pad="56"/>
-<connect gate="B" pin="!HIB" pad="33"/>
-<connect gate="B" pin="!RST" pad="38"/>
-<connect gate="B" pin="!WAKE" pad="32"/>
-<connect gate="B" pin="GNDX" pad="35"/>
-<connect gate="B" pin="OSC0" pad="40"/>
-<connect gate="B" pin="OSC1" pad="41"/>
-<connect gate="B" pin="VBAT" pad="37"/>
-<connect gate="B" pin="XOSC0" pad="34"/>
-<connect gate="B" pin="XOSC1" pad="36"/>
-<connect gate="C" pin="PA0/U0RX" pad="17"/>
-<connect gate="C" pin="PA1/U0TX" pad="18"/>
-<connect gate="C" pin="PA2/SSI0CLK" pad="19"/>
-<connect gate="C" pin="PA3/SSI0FSS" pad="20"/>
-<connect gate="C" pin="PA4/SSI0RX" pad="21"/>
-<connect gate="C" pin="PA5/SSI0TX" pad="22"/>
-<connect gate="C" pin="PA6" pad="23"/>
-<connect gate="C" pin="PA7" pad="24"/>
-<connect gate="D" pin="PB0" pad="45"/>
-<connect gate="D" pin="PB1" pad="46"/>
-<connect gate="D" pin="PB2/I2C0SCL" pad="47"/>
-<connect gate="D" pin="PB3/I2C0SDA" pad="48"/>
-<connect gate="D" pin="PB4" pad="58"/>
-<connect gate="D" pin="PB5" pad="57"/>
-<connect gate="D" pin="PB6" pad="1"/>
-<connect gate="D" pin="PB7" pad="4"/>
-<connect gate="E" pin="PC0/TCK/SWCLK" pad="52"/>
-<connect gate="E" pin="PC1/TMS/SWDIO" pad="51"/>
-<connect gate="E" pin="PC2/TDI" pad="50"/>
-<connect gate="E" pin="PC3/TDO/SWO" pad="49"/>
-<connect gate="E" pin="PC4" pad="16"/>
-<connect gate="E" pin="PC5" pad="15"/>
-<connect gate="E" pin="PC6" pad="14"/>
-<connect gate="E" pin="PC7" pad="13"/>
-<connect gate="F" pin="PD0" pad="61"/>
-<connect gate="F" pin="PD1" pad="62"/>
-<connect gate="F" pin="PD2" pad="63"/>
-<connect gate="F" pin="PD3" pad="64"/>
-<connect gate="F" pin="PD4" pad="43"/>
-<connect gate="F" pin="PD5" pad="44"/>
-<connect gate="F" pin="PD6" pad="53"/>
-<connect gate="F" pin="PD7" pad="10"/>
-<connect gate="G" pin="PE0" pad="9"/>
-<connect gate="G" pin="PE1" pad="8"/>
-<connect gate="G" pin="PE2" pad="7"/>
-<connect gate="G" pin="PE3" pad="6"/>
-<connect gate="G" pin="PE4" pad="59"/>
-<connect gate="G" pin="PE5" pad="60"/>
-<connect gate="H" pin="PF0" pad="28"/>
-<connect gate="H" pin="PF1" pad="29"/>
-<connect gate="H" pin="PF2" pad="30"/>
-<connect gate="H" pin="PF3" pad="31"/>
-<connect gate="H" pin="PF4" pad="5"/>
+<connect gate="A" pin="XOSC0" pad="34"/>
+<connect gate="A" pin="XOSC1" pad="36"/>
+<connect gate="B" pin="PA0/U0RX" pad="17"/>
+<connect gate="B" pin="PA1/U0TX" pad="18"/>
+<connect gate="B" pin="PA2/SSI0CLK" pad="19"/>
+<connect gate="B" pin="PA3/SSI0FSS" pad="20"/>
+<connect gate="B" pin="PA4/SSI0RX" pad="21"/>
+<connect gate="B" pin="PA5/SSI0TX" pad="22"/>
+<connect gate="B" pin="PA6" pad="23"/>
+<connect gate="B" pin="PA7" pad="24"/>
+<connect gate="B" pin="PB0" pad="45"/>
+<connect gate="B" pin="PB1" pad="46"/>
+<connect gate="B" pin="PB2/I2C0SCL" pad="47"/>
+<connect gate="B" pin="PB3/I2C0SDA" pad="48"/>
+<connect gate="B" pin="PB4" pad="58"/>
+<connect gate="B" pin="PB5" pad="57"/>
+<connect gate="B" pin="PB6" pad="1"/>
+<connect gate="B" pin="PB7" pad="4"/>
+<connect gate="C" pin="PC0/TCK/SWCLK" pad="52"/>
+<connect gate="C" pin="PC1/TMS/SWDIO" pad="51"/>
+<connect gate="C" pin="PC2/TDI" pad="50"/>
+<connect gate="C" pin="PC3/TDO/SWO" pad="49"/>
+<connect gate="C" pin="PC4" pad="16"/>
+<connect gate="C" pin="PC5" pad="15"/>
+<connect gate="C" pin="PC6" pad="14"/>
+<connect gate="C" pin="PC7" pad="13"/>
+<connect gate="C" pin="PD0" pad="61"/>
+<connect gate="C" pin="PD1" pad="62"/>
+<connect gate="C" pin="PD2" pad="63"/>
+<connect gate="C" pin="PD3" pad="64"/>
+<connect gate="C" pin="PD4" pad="43"/>
+<connect gate="C" pin="PD5" pad="44"/>
+<connect gate="C" pin="PD6" pad="53"/>
+<connect gate="C" pin="PD7" pad="10"/>
+<connect gate="D" pin="PE0" pad="9"/>
+<connect gate="D" pin="PE1" pad="8"/>
+<connect gate="D" pin="PE2" pad="7"/>
+<connect gate="D" pin="PE3" pad="6"/>
+<connect gate="D" pin="PE4" pad="59"/>
+<connect gate="D" pin="PE5" pad="60"/>
+<connect gate="D" pin="PF0" pad="28"/>
+<connect gate="D" pin="PF1" pad="29"/>
+<connect gate="D" pin="PF2" pad="30"/>
+<connect gate="D" pin="PF3" pad="31"/>
+<connect gate="D" pin="PF4" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
