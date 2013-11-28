@@ -59,6 +59,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>This library contains microcontrollers built by TI</description>
 <packages>
 <package name="64LQFP">
 <description>&lt;b&gt;Description:&lt;/b&gt; this footprint is untested!</description>

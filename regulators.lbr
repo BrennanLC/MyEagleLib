@@ -55,6 +55,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>Contains various types of voltage regulator</description>
 <packages>
 <package name="SOT23-DBV">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; DBV (R-PDSO-G5)&lt;p&gt;
@@ -102,6 +103,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 </symbols>
 <devicesets>
 <deviceset name="TPS73633DBVR" prefix="U">
+<description>3.3V LDO regulator. Package footprint not verified!!</description>
 <gates>
 <gate name="U1" symbol="TPS73633DBVR" x="0" y="0"/>
 </gates>
