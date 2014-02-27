@@ -88,13 +88,11 @@
 </packages>
 <symbols>
 <symbol name="4011_PWR">
-<description>4011 Gate with power leads</description>
-<wire x1="-2.54" y1="3.81" x2="-2.54" y2="-4.064" width="0.254" layer="94"/>
+<description>NAND Gate with power leads</description>
 <wire x1="-2.54" y1="-4.064" x2="0" y2="-4.064" width="0.254" layer="94"/>
 <wire x1="0" y1="-4.064" x2="3.556" y2="-4.064" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="3.81" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
 <wire x1="0" y1="3.81" x2="3.556" y2="3.81" width="0.254" layer="94"/>
-<wire x1="3.556" y1="3.81" x2="3.556" y2="-4.064" width="0.254" layer="94" curve="-180"/>
 <pin name="O1" x="12.7" y="0" visible="off" length="middle" direction="out" function="dot" rot="R180"/>
 <pin name="I0" x="-5.08" y="2.54" visible="off" length="short" direction="in" swaplevel="1"/>
 <pin name="I1" x="-5.08" y="-2.54" visible="off" length="short" direction="in" swaplevel="1"/>
@@ -104,6 +102,8 @@
 <text x="1.524" y="-6.35" size="1.778" layer="94">&gt;Value</text>
 <wire x1="0" y1="3.81" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="-5.08" x2="0" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="3.556" y1="3.81" x2="3.556" y2="-4.064" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="-4.064" width="0.254" layer="94"/>
 </symbol>
 <symbol name="4011">
 <description>4011 Gate B</description>
@@ -116,6 +116,46 @@
 <pin name="I1" x="-5.08" y="-2.54" visible="off" length="short" direction="in" swaplevel="1"/>
 <text x="-2.54" y="5.08" size="1.778" layer="94">&gt;Name</text>
 <text x="-2.54" y="-6.35" size="1.778" layer="94">&gt;Value</text>
+</symbol>
+<symbol name="NOR_PWR">
+<description>NOR Gate With Power Leads</description>
+<wire x1="-7.62" y1="-4.064" x2="-5.08" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-4.064" x2="-1.524" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-7.366" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-7.366" y1="3.81" x2="-7.62" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-1.524" y2="3.81" width="0.254" layer="94"/>
+<pin name="O1" x="10.16" y="0" visible="off" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="I0" x="-10.16" y="2.54" visible="off" length="middle" direction="in" swaplevel="1"/>
+<pin name="I1" x="-10.16" y="-2.54" visible="off" length="middle" direction="in" swaplevel="1"/>
+<pin name="14" x="-5.08" y="7.62" visible="off" length="short" direction="pwr" rot="R270"/>
+<pin name="7" x="-5.08" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
+<text x="-3.81" y="5.08" size="1.778" layer="94">&gt;Name</text>
+<text x="-3.556" y="-6.35" size="1.778" layer="94">&gt;Value</text>
+<wire x1="-5.08" y1="3.81" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-7.366" y1="3.81" x2="-7.62" y2="-4.064" width="0.254" layer="94" curve="-180"/>
+<wire x1="-1.524" y1="3.81" x2="5.08" y2="0" width="0.254" layer="94" curve="-59.963286"/>
+<wire x1="-1.524" y1="-4.064" x2="5.08" y2="0" width="0.254" layer="94" curve="63.215004"/>
+<wire x1="-5.08" y1="2.54" x2="-4.572" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="NOR">
+<description>NOR Gate No Power Leads</description>
+<wire x1="-7.62" y1="-4.064" x2="-5.08" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-4.064" x2="-1.524" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-7.366" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-7.366" y1="3.81" x2="-7.62" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-1.524" y2="3.81" width="0.254" layer="94"/>
+<pin name="O1" x="10.16" y="0" visible="off" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="I0" x="-10.16" y="2.54" visible="off" length="middle" direction="in" swaplevel="1"/>
+<pin name="I1" x="-10.16" y="-2.54" visible="off" length="middle" direction="in" swaplevel="1"/>
+<text x="-3.81" y="5.08" size="1.778" layer="94">&gt;Name</text>
+<text x="-3.556" y="-6.35" size="1.778" layer="94">&gt;Value</text>
+<wire x1="-7.366" y1="3.81" x2="-7.62" y2="-4.064" width="0.254" layer="94" curve="-180"/>
+<wire x1="-1.524" y1="3.81" x2="5.08" y2="0" width="0.254" layer="94" curve="-59.963286"/>
+<wire x1="-1.524" y1="-4.064" x2="5.08" y2="0" width="0.254" layer="94" curve="63.215004"/>
+<wire x1="-5.08" y1="2.54" x2="-4.572" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -148,6 +188,40 @@
 <technologies>
 <technology name="BM">
 <attribute name="DIGIKEYPART#" value="296-14474-1-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74HC02DR" prefix="U">
+<description>SN74HC02DR, Quad, Dual Input Nor Gate</description>
+<gates>
+<gate name="A" symbol="NOR_PWR" x="-30.48" y="15.24"/>
+<gate name="B" symbol="NOR" x="10.16" y="15.24"/>
+<gate name="C" symbol="NOR" x="-33.02" y="-10.16"/>
+<gate name="D" symbol="NOR" x="12.7" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="14-SOIC">
+<connects>
+<connect gate="A" pin="14" pad="14"/>
+<connect gate="A" pin="7" pad="7"/>
+<connect gate="A" pin="I0" pad="2"/>
+<connect gate="A" pin="I1" pad="3"/>
+<connect gate="A" pin="O1" pad="1"/>
+<connect gate="B" pin="I0" pad="5"/>
+<connect gate="B" pin="I1" pad="6"/>
+<connect gate="B" pin="O1" pad="4"/>
+<connect gate="C" pin="I0" pad="8"/>
+<connect gate="C" pin="I1" pad="9"/>
+<connect gate="C" pin="O1" pad="10"/>
+<connect gate="D" pin="I0" pad="11"/>
+<connect gate="D" pin="I1" pad="12"/>
+<connect gate="D" pin="O1" pad="13"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEYPART#" value="296-1188-1-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
