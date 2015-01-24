@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -171,6 +171,23 @@
 <text x="-10.16" y="11.43" size="1.778" layer="94">&gt;Name</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="94">&gt;Value</text>
 </symbol>
+<symbol name="MCP4921">
+<description>MCP49x1 8-bit, 10-bit or 12-bit single DAC.</description>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="!CS" x="-15.24" y="2.54" visible="pin" length="middle" function="dot"/>
+<pin name="SCK" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="SDI" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="!LDAC" x="-15.24" y="-5.08" visible="pin" length="middle" function="dot"/>
+<pin name="VDD" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="VSS" x="-15.24" y="-10.16" visible="pin" length="middle"/>
+<pin name="VOUT" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VREF" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<text x="-10.16" y="11.176" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ISO7220ADR" prefix="U">
@@ -219,6 +236,29 @@
 <technology name="">
 <attribute name="DIGIKEYPART#" value="296-21955-1-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP49X1" prefix="U">
+<description>MCP49x1 8-bit, 10-bit or 12-bit DAC</description>
+<gates>
+<gate name="U1" symbol="MCP4921" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOIC-8N" package="SO08">
+<connects>
+<connect gate="U1" pin="!CS" pad="2"/>
+<connect gate="U1" pin="!LDAC" pad="5"/>
+<connect gate="U1" pin="SCK" pad="3"/>
+<connect gate="U1" pin="SDI" pad="4"/>
+<connect gate="U1" pin="VDD" pad="1"/>
+<connect gate="U1" pin="VOUT" pad="8"/>
+<connect gate="U1" pin="VREF" pad="6"/>
+<connect gate="U1" pin="VSS" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
