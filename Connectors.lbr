@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -72,6 +72,31 @@
 <wire x1="5" y1="4.5" x2="-5.6" y2="4.5" width="0.127" layer="21"/>
 <wire x1="5" y1="-4" x2="-5.6" y2="-4" width="0.127" layer="21"/>
 </package>
+<package name="1932739">
+<smd name="8" x="0" y="0" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="7" x="1.1" y="0" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="6" x="2.2" y="0" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="5" x="3.3" y="0" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="4.4" y="0" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="6.6" y="0" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="5.5" y="0" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="1" x="7.7" y="0" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="9" x="9.465" y="2.67" dx="0.87" dy="0.84" layer="1" rot="R90"/>
+<smd name="G1" x="9.465" y="3.94" dx="0.97" dy="1.08" layer="1"/>
+<smd name="G2" x="9.465" y="6.5" dx="0.97" dy="1.1" layer="1"/>
+<smd name="G4" x="-1.435" y="2.79" dx="0.97" dy="2.38" layer="1"/>
+<smd name="G3" x="-1.435" y="5.975" dx="0.97" dy="1.05" layer="1"/>
+<smd name="SHIELD1" x="1.75" y="7.31" dx="2.9" dy="0.52" layer="1"/>
+<smd name="SHIELD2" x="5.94" y="7.31" dx="2.9" dy="0.52" layer="1"/>
+<wire x1="-2.5" y1="-1" x2="10.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="10.5" y1="-1" x2="10.5" y2="8" width="0.127" layer="21"/>
+<wire x1="10.5" y1="8" x2="-2.5" y2="8" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="8" x2="-2.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-10" x2="9.5" y2="-10" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-10" x2="-1.5" y2="5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="5" x2="9.5" y2="5" width="0.127" layer="51"/>
+<wire x1="9.5" y1="5" x2="9.5" y2="-10" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2-TERMINAL">
@@ -83,6 +108,28 @@
 <pin name="1" x="7.62" y="2.54" length="middle" rot="R180"/>
 <pin name="2" x="7.62" y="-2.54" length="middle" rot="R180"/>
 <text x="-2.54" y="6.096" size="1.778" layer="94">&gt;Name</text>
+</symbol>
+<symbol name="1932739">
+<description>MicroSD Card Push/Pull Socket</description>
+<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<pin name="NC" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="CS" x="-15.24" y="15.24" visible="pin" length="short"/>
+<pin name="DI/MOSI" x="-15.24" y="12.7" visible="pin" length="short"/>
+<pin name="VDD" x="-15.24" y="20.32" visible="pin" length="short"/>
+<pin name="CLK/SCK" x="-15.24" y="10.16" visible="pin" length="short"/>
+<pin name="VSS" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="DO/MISO" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="RSV" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PIN9" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="G1" x="12.7" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="G2" x="12.7" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="G3" x="12.7" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="G4" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SHIELD1" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="SHIELD2" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -101,6 +148,38 @@
 <technology name="">
 <attribute name="DIGIKEYPART#" value="ED2561-ND" constant="no"/>
 <attribute name="PART#" value="OSTTA020161" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICROSD_SOCKET" prefix="U">
+<description>Micro SD Card Push/Pull Card Socket</description>
+<gates>
+<gate name="G$1" symbol="1932739" x="2.54" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="1932739">
+<connects>
+<connect gate="G$1" pin="CLK/SCK" pad="5"/>
+<connect gate="G$1" pin="CS" pad="2"/>
+<connect gate="G$1" pin="DI/MOSI" pad="3"/>
+<connect gate="G$1" pin="DO/MISO" pad="7"/>
+<connect gate="G$1" pin="G1" pad="G1"/>
+<connect gate="G$1" pin="G2" pad="G2"/>
+<connect gate="G$1" pin="G3" pad="G3"/>
+<connect gate="G$1" pin="G4" pad="G4"/>
+<connect gate="G$1" pin="NC" pad="1"/>
+<connect gate="G$1" pin="PIN9" pad="9"/>
+<connect gate="G$1" pin="RSV" pad="8"/>
+<connect gate="G$1" pin="SHIELD1" pad="SHIELD1"/>
+<connect gate="G$1" pin="SHIELD2" pad="SHIELD2"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEYPART#" value="A118085CT-ND"/>
 </technology>
 </technologies>
 </device>
